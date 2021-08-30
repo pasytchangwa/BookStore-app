@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = () => {
+const InputHeader = () => {
   return (
       <h2>ADD NEW BOOK</h2>
   );
 };
 
-export default Header;
+export default InputHeader;
