@@ -7,18 +7,21 @@ import './Nav.css';
 export default function Nav() {
   return (
     <Router>
-      <div className='wrapper'>
-       <h1>Bookstore CMS</h1>
+      <div className="wrapper">
         <nav>
+          <h1 className="title">Bookstore CMS</h1>
           <ul>
-            <li>
+            <li className="books">
               <Link to="/books">BOOKS</Link>
             </li>
-            <li>
+            <li className="categories">
               <Link to="/categories">CATEGORIES</Link>
             </li>
           </ul>
         </nav>
+        <span className="profile">
+          <img src="" alt="profile pic" />
+        </span>
         <Switch>
           <Route path="/books">
             <Books />
@@ -27,7 +30,6 @@ export default function Nav() {
             <Categories />
           </Route>
         </Switch>
-        <span className='profile'><img src="" alt="profile pic" /></span>
       </div>
     </Router>
   );
