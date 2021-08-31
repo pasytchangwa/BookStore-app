@@ -17,7 +17,7 @@ The aim of this project is to:
 
 This project is build with:
 
-- RectJs;
+- ReactJs;
 - Redux;
 
 ## Cloning the project
