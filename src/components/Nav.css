@@ -16,7 +16,7 @@ img {
   justify-content: space-between;
 }
 
-.wrapper Nav {
+nav {
   display: flex;
   column-gap: 2.93rem;
 }
