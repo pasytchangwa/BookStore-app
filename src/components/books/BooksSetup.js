@@ -1,4 +1,4 @@
-import PropTypes from 'propTypes';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../../redux/books/books';
 
