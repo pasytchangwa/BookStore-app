@@ -1,9 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Bookstore: initialize project with components
 
 This project will lay foundations for my Bookstore website. I created a React and Redux app. I structured my files using the "feature folder" approach and I set up routing using React Router.
