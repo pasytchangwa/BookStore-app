@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 
 const BooksComplete = ({ progress }) => {
   const { currentChapter, completed } = progress;
+  const display2 = {
+    display: 'flex',
+    gap: '1.2rem',
+  };
 
   return (
-    <section className="complete-ctn">
+    <section style={display2}>
       <article className="progress-ctn">
         <p className="circle">cercle</p>
         <div className="percent-ctn">
@@ -25,7 +29,9 @@ const BooksComplete = ({ progress }) => {
           {currentChapter}
           `
         </p>
-        <button className="update" type="button">UPDATE PROGRESS</button>
+        <button className="update" type="button">
+          UPDATE PROGRESS
+        </button>
       </article>
     </section>
   );
