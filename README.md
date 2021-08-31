@@ -1,10 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: initialize project with components
+# Bookstore: create and remove books
 
-This project will lay foundations for my Bookstore website. I created a React and Redux app. I structured my files using the "feature folder" approach and I set up routing using React Router.
+The Bookstore is a website similar to the "Awesome Books" website built in the previous module. Here, I created an MVP version of the 'Awesome Books' website that allows users to:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 The aim of this project is to:
+- Learn how to use React and Redux.
 - Understand the concept of state management.
 - Use store, actions and reducers in React.
 - Connect React and Redux.
