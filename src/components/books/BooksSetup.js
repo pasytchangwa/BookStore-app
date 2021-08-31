@@ -14,13 +14,12 @@ const BooksSetup = ({ id }) => {
 
   return (
     <div style={display}>
-      <button type="button">Comments |</button>
-      <button
-        type="button"
-        onClick={handleRemove}
-      >
-        Remove |
+      <button type="button">Comments</button>
+      <p>|</p>
+      <button type="button" onClick={handleRemove}>
+        Remove
       </button>
+      <p>|</p>
       <button type="button">Edit</button>
     </div>
   );
