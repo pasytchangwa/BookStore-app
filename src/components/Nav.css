@@ -13,12 +13,24 @@ img {
 .wrapper {
   padding: 1.813rem 6.25rem;
   display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
   justify-content: space-between;
 }
 
 nav {
   display: flex;
   column-gap: 2.93rem;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
 .title {

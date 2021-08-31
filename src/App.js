@@ -2,9 +2,7 @@ import React from 'react';
 import Nav from './components/Nav';
 
 const App = () => (
-  <header>
-    <Nav />
-  </header>
+  <Nav />
 );
 
 export default App;

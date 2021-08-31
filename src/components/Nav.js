@@ -7,23 +7,33 @@ import Categories from './categories/Categories';
 import './Nav.css';
 
 export default function Nav() {
+  const dec = {
+    textDecoration: 'none',
+  };
+
   return (
     <Router>
       <div className="wrapper">
-        <nav>
-          <h1 className="title">Bookstore CMS</h1>
-          <ul>
-            <li className="books">
-              <Link to="/books">BOOKS</Link>
-            </li>
-            <li className="categories">
-              <Link to="/categories">CATEGORIES</Link>
-            </li>
-          </ul>
-        </nav>
-        <span className="profile">
-          <img src="" alt="profile pic" />
-        </span>
+        <header>
+          <nav>
+            <h1 className="title">Bookstore CMS</h1>
+            <ul>
+              <li className="books">
+                <Link to="/books" style={dec}>
+                  BOOKS
+                </Link>
+              </li>
+              <li className="categories">
+                <Link to="/categories" style={dec}>
+                  CATEGORIES
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <span className="profile">
+            <img src="" alt="profile pic" />
+          </span>
+        </header>
         <Switch>
           <Route path="/books">
             <BooksContainer />
