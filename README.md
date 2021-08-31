@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: create and remove books
+# Bookstore: connect to API
 
 The Bookstore is a website similar to the "Awesome Books" website built in the previous module. Here, I created an MVP version of the 'Awesome Books' website that allows users to:
 
