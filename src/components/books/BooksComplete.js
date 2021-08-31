@@ -1,27 +1,35 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-const BooksComplete = ({ progress }) =>{
-  const { currentChapter, completed } = progression;
+const BooksComplete = ({ progress }) => {
+  const { currentChapter, completed } = progress;
 
   return (
-   <div ClassName='complete-ctn'>
-     <div className="progress-ctn">
-       <p className="circle">cercle</p>
-       <div className="percent-ctn">
-         <p className="percent">`${completed}%`</p>
-         <span className="complete">Completed</span>
-       </div>
-     </div>
-     <p className="bar">|</p>
-     <div className="progress-ctn">
-       <p className="chapter">CURRENT CHAPTER</p>
-       <p className="chapter-title">`${currentChapter}`</p>
-       <button className="update" type='button'>UPDATE PROGRESS</button>
-     </div>
-   </div>
+    <section className="complete-ctn">
+      <article className="progress-ctn">
+        <p className="circle">cercle</p>
+        <div className="percent-ctn">
+          <p className="percent">
+            `$
+            {completed}
+            %`
+          </p>
+          <span className="complete">Completed</span>
+        </div>
+      </article>
+      <p className="bar">|</p>
+      <article className="progress-ctn">
+        <p className="chapter">CURRENT CHAPTER</p>
+        <p className="chapter-title">
+          `$
+          {currentChapter}
+          `
+        </p>
+        <button className="update" type="button">UPDATE PROGRESS</button>
+      </article>
+    </section>
   );
-}
+};
 
 BooksComplete.propTypes = {
   progress: PropTypes.shape({
