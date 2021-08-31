@@ -14,7 +14,7 @@ const BooksItem = ({ book }) => {
         <p>{category}</p>
         <h3>{title}</h3>
         <p>{author}</p>
-        <BooksSetup />
+        <BooksSetup id={id} />
       </div>
       <BooksComplete progress={progress} />
     </li>

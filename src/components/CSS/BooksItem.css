@@ -12,5 +12,5 @@
 .about-book {
   display: flex;
   flex-direction: column;
-  row-gap: 1.31rem;
+  row-gap: 1rem;
 }
