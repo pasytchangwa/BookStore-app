@@ -14,9 +14,8 @@ const BooksComplete = ({ progress }) => {
         <p className="circle">cercle</p>
         <div className="percent-ctn">
           <p className="percent">
-            `$
             {completed}
-            %`
+            %
           </p>
           <span className="complete">Completed</span>
         </div>
@@ -25,9 +24,7 @@ const BooksComplete = ({ progress }) => {
       <article className="progress-ctn">
         <p className="chapter">CURRENT CHAPTER</p>
         <p className="chapter-title">
-          `$
           {currentChapter}
-          `
         </p>
         <button className="update" type="button">
           UPDATE PROGRESS
