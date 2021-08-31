@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import BooksContainer from './books/BooksContainer';
 import Categories from './categories/Categories';
-import './Nav.css';
+import './CSS/Nav.css';
 
 export default function Nav() {
   const dec = {

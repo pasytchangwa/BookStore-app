@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import BooksItem from './BooksItem';
-import './BooksList.css';
+import '../CSS/BooksList.css';
 
 const BooksList = ({ books }) => (
   <ul className="list">

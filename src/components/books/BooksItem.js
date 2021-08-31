@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import BooksSetup from './BooksSetup';
 import BooksComplete from './BooksComplete';
-import './BooksItem.css';
+import '../CSS/BooksItem.css';
 
 const BooksItem = ({ book }) => {
   const {

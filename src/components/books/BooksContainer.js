@@ -2,6 +2,7 @@ import React from 'react';
 import BooksList from './BooksList';
 import InputHeader from './InputHeader';
 import InputBooks from './InputBooks';
+import '../CSS/BooksContainer.css';
 
 const books = [
   {
