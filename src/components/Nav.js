@@ -2,7 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router, Switch, Route, Link,
 } from 'react-router-dom';
-import Books from './books/Books';
+import BooksContainer from './books/BooksContainer';
 import Categories from './categories/Categories';
 import './Nav.css';
 
@@ -26,7 +26,7 @@ export default function Nav() {
         </span>
         <Switch>
           <Route path="/books">
-            <Books />
+            <BooksContainer />
           </Route>
           <Route path="/categories">
             <Categories />
