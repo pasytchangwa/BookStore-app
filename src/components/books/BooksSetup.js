@@ -9,7 +9,7 @@ const BooksSetup = ({ id }) => {
   const handleRemove = () => {
     axios
       .delete(
-        `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BgVyYWwUEkoOu7CaDcOv/books/${id}`
+        `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BgVyYWwUEkoOu7CaDcOv/books/${id}`,
       )
       .then((res) => {
         if (res.status === 201) {
