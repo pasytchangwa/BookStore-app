@@ -6,7 +6,7 @@ const BooksList = ({ books }) => (
   <section className="list-section">
     <ul className="list">
       {books.map((book) => (
-        <BooksItem key={book.id} book={book} />
+        <BooksItem key={book.item_id} book={book} />
       ))}
     </ul>
   </section>

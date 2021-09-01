@@ -1,11 +1,22 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import axios from 'axios';
 import { removeBook } from '../../redux/books/books';
 
 const BooksSetup = ({ id }) => {
   const dispatch = useDispatch();
 
-  const handleRemove = () => dispatch(removeBook(id));
+  const handleRemove = () => {
+    axios
+      .delete(
+        `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BgVyYWwUEkoOu7CaDcOv/books/${id}`,
+      )
+      .then((res) => {
+        if (res.status === 201) {
+          dispatch(removeBook(id));
+        }
+      });
+  };
 
   const display = {
     display: 'flex',

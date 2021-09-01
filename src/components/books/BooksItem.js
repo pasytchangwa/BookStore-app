@@ -5,7 +5,7 @@ import '../CSS/BooksItem.css';
 
 const BooksItem = ({ book }) => {
   const {
-    id, category, title, author, progress,
+    item_id: id, category, title, author, progress,
   } = book;
 
   return (
@@ -23,7 +23,7 @@ const BooksItem = ({ book }) => {
 
 BooksItem.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
