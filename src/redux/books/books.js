@@ -14,7 +14,7 @@ export const removeBook = (id) => ({
   id,
 });
 
-export const setBook = (payload) => ({
+export const setBooks = (payload) => ({
   type: SET_BOOKS,
   payload,
 });
