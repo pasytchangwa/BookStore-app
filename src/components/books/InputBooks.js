@@ -1,32 +1,36 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
 import { addBook } from '../../redux/books/books';
 import InputHeader from './InputHeader';
 
 const InputBooks = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Action');
 
-  const handleChange = (ev) => setTitle(ev.target.value);
-  const handleChangeAgain = (ev) => setAuthor(ev.target.value);
-  const handleChangeAgainAgain = (ev) => setCategory(ev.target.value);
+  const newBook = (book) => {
+    axios.post(
+      'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BgVyYWwUEkoOu7CaDcOv/books', book,
+    )
+      .then((res) => {
+        if (res.status === 201) {
+          dispatch(addBook(book));
+        }
+      })
+      .catch((error) => error);
+  };
 
   const submitBookToStore = (ev) => {
     ev.preventDefault();
     const book = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
-      author,
       category,
     };
-
-    dispatch(addBook(book));
+    newBook(book);
     setTitle('');
-    setAuthor('');
-    setCategory('');
   };
 
   return (
@@ -36,20 +40,16 @@ const InputBooks = () => {
         <input
           placeholder="Book title"
           value={title}
-          onChange={handleChange}
+          onChange={(ev) => setTitle(ev.target.value)}
           required
         />
-        <input
-          placeholder="Book author"
-          value={author}
-          onChange={handleChangeAgain}
-          required
-        />
-        <select placeholder="category" onChange={handleChangeAgainAgain}>
-          <option value="">Category</option>
-          <option>Science Fiction</option>
-          <option>Action</option>
-          <option>Economy</option>
+        <select
+          placeholder="category"
+          onChange={(ev) => setCategory(ev.target.value)}
+        >
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Action">Action</option>
+          <option value="Economy">Economy</option>
         </select>
         <button type="submit">ADD BOOK</button>
       </form>
