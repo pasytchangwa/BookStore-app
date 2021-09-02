@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import { removeBook } from '../../redux/books/books';
+import '../CSS/BooksSetup.css';
 
 const BooksSetup = ({ id }) => {
   const dispatch = useDispatch();
@@ -20,18 +21,23 @@ const BooksSetup = ({ id }) => {
 
   const display = {
     display: 'flex',
-    gap: '0.5rem',
+    gap: '0.938rem',
+    paddingTop: '1.31rem',
   };
 
   return (
     <div style={display}>
-      <button type="button">Comments</button>
-      <p>|</p>
-      <button type="button" onClick={handleRemove}>
+      <button type="button" className="btn">
+        Comments
+      </button>
+      <i className="bar" />
+      <button type="button" onClick={handleRemove} className="btn">
         Remove
       </button>
-      <p>|</p>
-      <button type="button">Edit</button>
+      <i className="bar" />
+      <button type="button" className="btn">
+        Edit
+      </button>
     </div>
   );
 };

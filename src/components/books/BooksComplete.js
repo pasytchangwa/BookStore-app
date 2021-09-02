@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../CSS/BooksComplete.css';
 
 const BooksComplete = ({ progress }) => {
   const { currentChapter, completed } = progress;
   const display2 = {
     display: 'flex',
-    gap: '1.2rem',
   };
 
   return (
     <section style={display2}>
-      <article className="progress-ctn">
-        <p className="circle">cercle</p>
+      <article className="progress-ctn1">
+        <div className="progress">
+          <p className="circle" />
+        </div>
         <div className="percent-ctn">
           <p className="percent">
             {completed}
@@ -20,12 +22,10 @@ const BooksComplete = ({ progress }) => {
           <span className="complete">Completed</span>
         </div>
       </article>
-      <p className="bar">|</p>
-      <article className="progress-ctn">
+      <p className="separate" />
+      <article className="progress-ctn2">
         <p className="chapter">CURRENT CHAPTER</p>
-        <p className="chapter-title">
-          {currentChapter}
-        </p>
+        <p className="chapter-title">{currentChapter}</p>
         <button className="update" type="button">
           UPDATE PROGRESS
         </button>

@@ -13,7 +13,7 @@ const BooksItem = ({ book }) => {
       <div className="about-book">
         <p>{category}</p>
         <h3>{title}</h3>
-        <p>{author}</p>
+        <span>{author}</span>
         <BooksSetup id={id} />
       </div>
       <BooksComplete progress={progress} />
