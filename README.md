@@ -16,6 +16,9 @@ The aim of this project is to:
 - Use store, actions and reducers in React.
 - Connect React and Redux.
 
+## Online Demo
+[Click Here](https://angry-hopper-16c3d6.netlify.app/)
+
 ## Built With
 
 This project is build with:
