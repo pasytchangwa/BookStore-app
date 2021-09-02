@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Roboto+Slab:wght@700&display=swap');
+
+.btn {
+  height: 1.188rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.bar {
+  width: 0.125rem;
+  height: 1.5rem;
+  border: solid 1px #e8e8e8;
+}
+
+
+
+
