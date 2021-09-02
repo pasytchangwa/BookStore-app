@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Roboto+Slab:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adding {
+  display: flex;
+  flex-direction: column;
+  gap: 1.188rem;
+  padding-top: 1.813rem;
+  border-top: 2px solid #e8e8e8;
+}
+
+.form-part {
+  display: flex;
+  gap: 2.125rem;
+  margin-bottom: 16rem;
+}
+
+.form-part input {
+  width: 41.5rem;
+  height: 2.813rem;
+  padding: 0.813rem 0 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.form-part input::placeholder {
+  height: 1.188rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.form-part select {
+  width: 17.813rem;
+  height: 2.813rem;
+  padding: 0 0.938rem 0 1rem;
+  text-align: center;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.form-part button {
+  width: 11.5rem;
+  height: 2.813rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}

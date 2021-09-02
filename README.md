@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bookstore: connect to API
+# Bookstore: Final milestone
+
+![Screenshot from 2021-09-02 12-32-07](https://user-images.githubusercontent.com/64914462/131820361-d7c56304-065a-443a-b94f-f4d6c8e92933.png)
 
 The Bookstore is a website similar to the "Awesome Books" website built in the previous module. Here, I created an MVP version of the 'Awesome Books' website that allows users to:
 

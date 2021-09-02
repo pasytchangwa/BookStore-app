@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import { addBook } from '../../redux/books/books';
 import InputHeader from './InputHeader';
+import '../CSS/InputBooks.css';
 
 const InputBooks = () => {
   const dispatch = useDispatch();
@@ -43,10 +44,10 @@ const InputBooks = () => {
           onChange={(ev) => setTitle(ev.target.value)}
           required
         />
-        <select
-          placeholder="category"
-          onChange={(ev) => setCategory(ev.target.value)}
-        >
+        <select onChange={(ev) => setCategory(ev.target.value)} required>
+          <option value="" selected disabled hidden>
+            Category
+          </option>
           <option value="Science Fiction">Science Fiction</option>
           <option value="Action">Action</option>
           <option value="Economy">Economy</option>
